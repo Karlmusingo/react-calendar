@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullcalendar/daygrid": "4.2.0",
+    "@fullcalendar/interaction": "4.2.0",
+    "@fullcalendar/react": "4.2.0",
+    "@fullcalendar/timegrid": "4.2.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-horizontal-scrolling-menu": "^0.7.3",
     "react-scripts": "3.2.0"
   },
   "scripts": {

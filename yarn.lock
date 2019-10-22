@@ -904,6 +904,36 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@fullcalendar/core@~4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/core/-/core-4.2.0.tgz#16716d6617137e54fceeb03c72f5124c92b86e58"
+  integrity sha512-4kd5OGHxjMtwI0gUHKwAYzmR0Z79Qf8y0ARx2Ruh20JdVy3Tznn6oKwdpkUbaXWrLXNDoXYRkBiFCIgC27VNCw==
+
+"@fullcalendar/daygrid@4.2.0", "@fullcalendar/daygrid@~4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/daygrid/-/daygrid-4.2.0.tgz#c49a9e27baf40b5a637a5d8fffa2670f19ed636b"
+  integrity sha512-9C61TowLTTZ657cErdylkdRYxXj5HO0NgogQgYX9X2wz7yvn6loiyGx6oq0o6OFf+e/Z4Ey06j7f/fqn/BPYEQ==
+
+"@fullcalendar/interaction@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/interaction/-/interaction-4.2.0.tgz#312e83f575aed67c33aec69884664d436aaedef2"
+  integrity sha512-wwAyocUp1HEY7c7xCymR9EGdh7AWZrwNiBQlIpP3ne0eJT0U4ZjlnoOoels3VPsTJ9a6pdO1/XoGjEvL1T5y4g==
+
+"@fullcalendar/react@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/react/-/react-4.2.0.tgz#c1044e5f0cff4336ff1b61f105b3a006aa2d15ad"
+  integrity sha512-sZk1v5TSISYYTwCmJ9unGXZQVEy61K4KEFnKZebukhxUrITMkoNVw/nsLZhz8QMJV9rIMaOHqP3KJQtVMp/H3Q==
+  dependencies:
+    "@fullcalendar/core" "~4.2.0"
+    fast-deep-equal "^2.0.1"
+
+"@fullcalendar/timegrid@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/timegrid/-/timegrid-4.2.0.tgz#e2372ba108f5da8e38c915366c2101b4365ff409"
+  integrity sha512-JtojTR+1uc1/WNzejcmsI5/2Jg007QprK5IpR8ocUVEcHXaBBXU6CPGirEWKyfk7QPZ7KzmJCykQ68QHiptyKA==
+  dependencies:
+    "@fullcalendar/daygrid" "~4.2.0"
+
 "@hapi/address@2.x.x":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
@@ -7997,7 +8027,7 @@ react-dev-utils@^9.1.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@16.10.2:
+react-dom@^16.10.2:
   version "16.10.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.10.2.tgz#4840bce5409176bc3a1f2bd8cb10b92db452fda6"
   integrity sha512-kWGDcH3ItJK4+6Pl9DZB16BXYAZyrYQItU4OMy0jAkv5aNqc+mAKb4TpFtAteI6TJZu+9ZlNhaeNQSVQDHJzkw==
@@ -8011,6 +8041,11 @@ react-error-overlay@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
+
+react-horizontal-scrolling-menu@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/react-horizontal-scrolling-menu/-/react-horizontal-scrolling-menu-0.7.3.tgz#78f05d0cbcf50dad5bc18e0eb0db6b3162ef5944"
+  integrity sha512-U+RkMg1LRtvECjIU6x/krvPPjiqqAHSHynE/cYONYWMB66a0RmD5qQuS1I0H44Os5ox6b64l3SFBgCYprcVDOg==
 
 react-is@^16.8.1, react-is@^16.8.4:
   version "16.10.1"
@@ -8078,7 +8113,7 @@ react-scripts@3.2.0:
   optionalDependencies:
     fsevents "2.0.7"
 
-react@16.10.2:
+react@^16.10.2:
   version "16.10.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
   integrity sha512-MFVIq0DpIhrHFyqLU0S3+4dIcBhhOvBE8bJ/5kHPVOVaGdo0KuiQzpcjCPsf585WvhypqtrMILyoE2th6dT+Lw==
