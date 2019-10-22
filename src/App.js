@@ -3,8 +3,9 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
+import './calendar.scss';
 
-import "./styles.css";
+// import "./styles.css";
 
 // must manually import the stylesheets for each plugin
 import "@fullcalendar/core/main.css";
@@ -26,18 +27,18 @@ export default class DemoApp extends React.Component {
   render() {
     return (
       <div className="demo-app">
-        <div className="demo-app-top">
+        {/* <div className="demo-app-top">
           <button onClick={this.toggleWeekends}>toggle weekends</button>&nbsp;
           <button onClick={this.gotoPast}>go to a date in the past</button>
           &nbsp; (also, click a date/time to add an event)
-        </div>
+        </div> */}
         <div className="demo-app-calendar">
           <FullCalendar
-            defaultView="dayGridMonth"
+            defaultView="timeGridWeek"
             header={{
-              left: "prev,next today",
-              center: "title",
-              right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek"
+              center: "prev,next today",
+              right: " ",
+              left: "dayGridMonth,timeGridWeek,timeGridDay,listWeek"
             }}
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             ref={this.calendarComponentRef}
